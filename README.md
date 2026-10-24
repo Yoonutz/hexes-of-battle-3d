@@ -9,6 +9,7 @@ An unofficial fan modification of [Hexes of Battle](https://hexes-of-battle.web.
 - Soldiers are real 3D models instead of flat cut-outs, in blue or red per army, each with its own weapon.
 - Faces, hair and beards, mail and plate that reflect the sky, knees that bend, and four different looks per unit type.
 - The unit portraits in the HUD are rendered from the 3D models.
+- The HUD sticks to the screen edges on any window shape, instead of floating as one 16:9 block in the top-left.
 - Forests, swamps and hills have 3D trees, reeds and rocks.
 - Sky, horizon and sun shadows.
 - Camera rotation: right-click and drag, the Q and E keys, or the three buttons at the bottom right.

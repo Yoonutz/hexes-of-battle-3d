@@ -1163,8 +1163,87 @@
     bar.addEventListener('lostpointercapture', stop);
   }
 
+  // ---------- HUD edge anchoring ----------
+  // The game draws its HUD for 1920x1080 and scales it as one block from the top-left,
+  // so on other window shapes panels float in the middle. Each top-level panel is pulled
+  // to the edge it was designed against, through its pivot (the game owns position).
+
+  const DESIGN = { w: 1920, h: 1080 };
+  const ui = { hud: null, dx: 0, dy: 0, items: [] };
+  const uiState = new WeakMap(); // child -> { key, pivotX, pivotY, ax, ay, box }
+
+  function registerHud(hud) {
+    ui.hud = hud;
+    applyUiAnchors();
+  }
+
+  function uiResize(w, h, s) {
+    const scale = s || 1;
+    ui.dx = Math.max(0, w / scale - DESIGN.w);
+    ui.dy = Math.max(0, h / scale - DESIGN.h);
+    applyUiAnchors();
+  }
+
+  // Which edge a panel belongs to: 0 = left/top, 0.5 = centre, 1 = right/bottom.
+  function anchorOf(lo, hi, size) {
+    const mid = size / 2;
+    if (hi - lo > size * 0.7) return 0.5;
+    const c = (lo + hi) / 2;
+    if (Math.abs(c - mid) < size * 0.08) return 0.5;
+    return c > mid ? 1 : 0;
+  }
+
+  function applyUiAnchors() {
+    if (!ui.hud) return;
+    const items = [];
+    for (const group of [ui.hud.uiRenderGroup, ui.hud.uiPlusRenderGroup]) {
+      if (!group) continue;
+      for (const c of group.children) {
+        let st = uiState.get(c);
+        const key = `${c.position.x},${c.position.y},${c.scale.x},${c.scale.y},${c.children?.length ?? 0},${c.visible}`;
+        if (!st) {
+          st = { pivotX: c.pivot.x, pivotY: c.pivot.y };
+          uiState.set(c, st);
+        }
+        if (st.key !== key) {
+          // Design-space box: local bounds through the game's position and scale, ignoring our pivot.
+          const b = c.getLocalBounds();
+          const sx = c.scale.x || 1, sy = c.scale.y || 1;
+          const x0 = c.position.x + (b.minX - st.pivotX) * sx;
+          const x1 = c.position.x + (b.maxX - st.pivotX) * sx;
+          const y0 = c.position.y + (b.minY - st.pivotY) * sy;
+          const y1 = c.position.y + (b.maxY - st.pivotY) * sy;
+          if (Number.isFinite(x0) && x1 > x0 && y1 > y0) {
+            st.box = { x0, x1, y0, y1 };
+            st.ax = anchorOf(x0, x1, DESIGN.w);
+            st.ay = anchorOf(y0, y1, DESIGN.h);
+            st.key = key; // only remember a measurement that found content; empty panels retry next frame
+          }
+        }
+        if (!st.box) continue;
+        const shiftX = st.ax * ui.dx, shiftY = st.ay * ui.dy;
+        c.pivot.set(st.pivotX - shiftX / (c.scale.x || 1), st.pivotY - shiftY / (c.scale.y || 1));
+        if (c.visible) items.push({ ...st.box, shiftX, shiftY });
+      }
+    }
+    ui.items = items;
+  }
+
+  // Map a pointer from where things are drawn back to the HUD's design coordinates.
+  function uiUnshift(x, y) {
+    for (let i = ui.items.length - 1; i >= 0; i--) {
+      const it = ui.items[i];
+      if (x >= it.x0 + it.shiftX && x <= it.x1 + it.shiftX && y >= it.y0 + it.shiftY && y <= it.y1 + it.shiftY)
+        return [x - it.shiftX, y - it.shiftY];
+    }
+    // Empty space: undo the shift of the zone the point is in.
+    const zone = (v, size, d) => (v <= size / 2 ? v : v >= size / 2 + d ? v - d : v - d / 2);
+    return [zone(x, DESIGN.w, ui.dx), zone(y, DESIGN.h, ui.dy)];
+  }
+
   let last = 0;
   function tick(now) {
+    applyUiAnchors();
     const dt = last ? Math.min(0.1, (now - last) / 1000) : 0;
     last = now;
     if (rot.hold && sceneMgr) sceneMgr.rotateCamera(rot.hold * dt * 1.6);
@@ -1185,6 +1264,16 @@
     },
     get board() {
       return lastBoard;
+    },
+    registerHud,
+    uiResize,
+    uiUnshift,
+    // Debug: HUD panels as anchored now (design boxes and shifts).
+    get uiItems() {
+      return { dx: ui.dx, dy: ui.dy, items: ui.items };
+    },
+    get hud() {
+      return ui.hud;
     },
     // Debug: objects currently in the portrait scene (lights only when idle).
     get portraitSceneSize() {
