@@ -1,0 +1,80 @@
+[
+    {
+        "id": "heal-01",
+        "name": "patch-up",
+        "tooltip-name": "Patch up",
+        "description": "Heal a friendly unit for a bit of health.",
+        "icon": "skills/icon_patch_up.png",
+        "abilityType": "active",
+        "allowedTargets": [
+            "self",
+            "allies"
+        ]
+    },
+    {
+        "id": "pck-01",
+        "name": "pick-up ammo",
+        "tooltip-name": "Pick-up ammo",
+        "description": "Pick up ammo from the ground.",
+        "icon": "skills/icon_pickup_ammo.png",
+        "abilityType": "active",
+        "allowedTargets": [
+            "none"
+        ]
+    },
+    {
+        "id": "jav-01",
+        "name": "throw-javelin",
+        "tooltip-name": "Throw javelin",
+        "description": "Throw a javelin at an enemy.",
+        "icon": "skills/icon_throw_javelin.png",
+        "abilityType": "active",
+        "allowedTargets": [
+            "enemies"
+        ],
+        "requiresTarget": true,
+        "range": 2,
+        "damage_low": 8,
+        "damage_high": 10,
+        "resources": [
+            {
+                "resource_used": "ammo",
+                "resource_cost": 1
+            },
+            {
+                "resource_used": "stamina",
+                "resource_cost": 1
+            },
+            {
+                "resource_used": "attack",
+                "resource_cost": 1
+            }
+        ]
+    },
+    {
+        "id": "quick-draw-01",
+        "name": "Quick draw",
+        "tooltip-name": "Quick draw",
+        "description": "Shoot twice in the same turn while attacking a target, paying 2 additional stamina points.",
+        "icon": "skills/icon_quick_draw.png",
+        "abilityType": "active",
+        "allowedTargets": [
+            "enemies"
+        ],
+        "requiresTarget": true,
+        "resources": [
+            {
+                "resource_used": "ammo",
+                "resource_cost": 2
+            },
+            {
+                "resource_used": "stamina",
+                "resource_cost": 6
+            },
+            {
+                "resource_used": "attack",
+                "resource_cost": 1
+            }
+        ]
+    }
+]

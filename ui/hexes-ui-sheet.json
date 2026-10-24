@@ -1,0 +1,497 @@
+{
+    "frames": {
+        "empty.png": {
+            "frame": {
+                "x": 1,
+                "y": 1,
+                "w": 2,
+                "h": 2
+            }
+        },
+        "cursor_arrow.png": {
+            "frame": {
+                "x": 67,
+                "y": 283,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "cur_run_to.png": {
+            "frame": {
+                "x": 35,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "cursor_bow.png": {
+            "frame": {
+                "x": 69,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "cur_gs_arrow.png": {
+            "frame": {
+                "x": 1,
+                "y": 35,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "cursor_sword.png": {
+            "frame": {
+                "x": 1,
+                "y": 283,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "cursor_sword_w.png": {
+            "frame": {
+                "x": 1,
+                "y": 151,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.05,
+                "y": 0.5
+            }
+        },
+        "cursor_sword_e.png": {
+            "frame": {
+                "x": 67,
+                "y": 151,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.95,
+                "y": 0.5
+            }
+        },
+        "cursor_sword_nw.png": {
+            "frame": {
+                "x": 133,
+                "y": 151,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.25,
+                "y": 0.1
+            }
+        },
+        "cursor_sword_ne.png": {
+            "frame": {
+                "x": 1,
+                "y": 217,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.85,
+                "y": 0.1
+            }
+        },
+        "cursor_sword_sw.png": {
+            "frame": {
+                "x": 67,
+                "y": 217,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.15,
+                "y": 0.9
+            }
+        },
+        "cursor_sword_se.png": {
+            "frame": {
+                "x": 133,
+                "y": 217,
+                "w": 64,
+                "h": 64
+            },
+            "anchor": {
+                "x": 0.85,
+                "y": 0.9
+            }
+        },
+        "btn_simple.png": {
+            "frame": {
+                "x": 1,
+                "y": 101,
+                "w": 48,
+                "h": 48
+            }
+        },
+        "btn_simple_hover.png": {
+            "frame": {
+                "x": 51,
+                "y": 101,
+                "w": 48,
+                "h": 48
+            }
+        },
+        "btn_simple_click.png": {
+            "frame": {
+                "x": 101,
+                "y": 101,
+                "w": 48,
+                "h": 48
+            }
+        },
+        "glyph_fullscreen.png": {
+            "frame": {
+                "x": 103,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_plus.png": {
+            "frame": {
+                "x": 69,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_minus.png": {
+            "frame": {
+                "x": 103,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_xy.png": {
+            "frame": {
+                "x": 137,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_grid.png": {
+            "frame": {
+                "x": 137,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_next_turn.png": {
+            "frame": {
+                "x": 171,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_next_unit.png": {
+            "frame": {
+                "x": 171,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_toggle_healthbars.png": {
+            "frame": {
+                "x": 205,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_toggle_stats.png": {
+            "frame": {
+                "x": 205,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_toggle_music.png": {
+            "frame": {
+                "x": 239,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_toggle_perf_stats.png": {
+            "frame": {
+                "x": 239,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_hp": {
+            "frame": {
+                "x": 273,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_attack_melee": {
+            "frame": {
+                "x": 273,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_attack_ranged": {
+            "frame": {
+                "x": 307,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_range": {
+            "frame": {
+                "x": 307,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_movement": {
+            "frame": {
+                "x": 341,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_attacks": {
+            "frame": {
+                "x": 341,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_defense_melee": {
+            "frame": {
+                "x": 375,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_defense_ranged": {
+            "frame": {
+                "x": 375,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_counterattacks": {
+            "frame": {
+                "x": 409,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_stamina": {
+            "frame": {
+                "x": 409,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_ammo": {
+            "frame": {
+                "x": 443,
+                "y": 1,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "glyph_morale": {
+            "frame": {
+                "x": 443,
+                "y": 35,
+                "w": 32,
+                "h": 32
+            }
+        },
+        "panel.png": {
+            "frame": {"x": 397,"y": 151,"w": 64,"h": 64}
+        },
+        "sword_attack_anim_01.png": {
+            "frame": {
+                "x": 1,
+                "y": 349,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "sword_attack_anim_02.png": {
+            "frame": {
+                "x": 67,
+                "y": 349,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "sword_attack_anim_03.png": {
+            "frame": {
+                "x": 133,
+                "y": 349,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "sword_attack_anim_04.png": {
+            "frame": {
+                "x": 1,
+                "y": 415,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "sword_attack_anim_05.png": {
+            "frame": {
+                "x": 67,
+                "y": 415,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "sword_attack_anim_06.png": {
+            "frame": {
+                "x": 133,
+                "y": 415,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "arrow_attack_anim_01.png": {
+            "frame": {
+                "x": 201,
+                "y": 153,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "arrow_attack_anim_02.png": {
+            "frame": {
+                "x": 267,
+                "y": 153,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "arrow_attack_anim_03.png": {
+            "frame": {
+                "x": 333,
+                "y": 153,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "arrow_attack_anim_04.png": {
+            "frame": {
+                "x": 201,
+                "y": 219,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "arrow_attack_anim_05.png": {
+            "frame": {
+                "x": 267,
+                "y": 219,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "arrow_attack_anim_06.png": {
+            "frame": {
+                "x": 333,
+                "y": 219,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "progress_bg.png": {
+            "frame": {
+                "x": 151,
+                "y": 101,
+                "w": 96,
+                "h": 48
+            }
+        },
+        "progress_fill.png": {
+            "frame": {
+                "x": 249,
+                "y": 101,
+                "w": 96,
+                "h": 23
+            }
+        },
+        "thin_button_normal.png": {
+            "frame": {"x": 250,"y": 127,"w": 12,"h": 12}
+        },
+        "thin_button_hover.png": {
+            "frame": {"x": 264,"y": 127,"w": 12,"h": 12}
+        },
+        "thin_button_click.png": {
+            "frame": {"x": 278,"y": 127,"w": 12,"h": 12}
+        },
+        "thin_button_2_normal.png": {
+            "frame": {"x": 70,"y": 70,"w": 30,"h": 30}
+        },
+        "thin_button_2_hover.png": {
+            "frame": {"x": 104,"y": 70,"w": 30,"h": 30}
+        },
+        "thin_panel_semitransparent.png": {
+            "frame": {"x": 138,"y": 70,"w": 30,"h": 30}
+        }
+
+    },
+    "animations": {
+        "anim_sword_attack.png": [
+            "sword_attack_anim_01.png",
+            "sword_attack_anim_02.png",
+            "sword_attack_anim_03.png",
+            "sword_attack_anim_04.png",
+            "sword_attack_anim_05.png",
+            "sword_attack_anim_06.png"
+        ],
+        "anim_arrow_attack.png": [
+            "arrow_attack_anim_01.png",
+            "arrow_attack_anim_02.png",
+            "arrow_attack_anim_03.png",
+            "arrow_attack_anim_04.png",
+            "arrow_attack_anim_05.png",
+            "arrow_attack_anim_06.png"
+        ]
+    },
+    "meta": {
+        "image": "hexes-ui.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 512,
+            "h": 512
+        },
+        "scale": "1.0"
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "fragileLine": {
+    "name": "Fragile Line",
+    "icon": "traits/icon_fragile_line.png",
+    "extraMoraleLoss": 2,
+    "description": "Fragile Line: Suffers +2 extra morale loss whenever attacked in melee combat."
+  },
+  "shieldBlock": {
+    "name": "Shield Block",
+    "icon": "traits/icon_shield_block.png",
+    "damageReduction": 2,
+    "description": "Shield Block: Reduces melee damage by 2 for the first attack received in a turn."
+  },
+  "volleyFire": {
+    "name": "Volley Fire",
+    "icon": "traits/icon_volley_fire.png",
+    "highThreshold": 0.75,
+    "highMultiplier": 1.25,
+    "midThreshold": 0.50,
+    "midMultiplier": 1.0,
+    "lowMultiplier": 0.75,
+    "description": "Volley Fire: Inflicts 125% ranged damage to targets with >75% units, 100% to 50%-75% units, and 75% to <50% units."
+  },
+  "spearWall": {
+    "name": "Spear Wall",
+    "icon": "traits/icon_spear_wall.png",
+    "damageReduction": 2,
+    "damageMultiplier": 1.0,
+    "exactDirectionOnly": true,
+    "description": "Spear Wall: Reduces incoming melee damage by 2 when attacked from the direction the unit is facing."
+  },
+  "impreciseVolley": {
+    "name": "Imprecise Volley",
+    "icon": "traits/icon_volley_fire.png",
+    "highThreshold": 0.75,
+    "highMultiplier": 1.5,
+    "midThreshold": 0.50,
+    "midMultiplier": 1.0,
+    "lowMultiplier": 0.5,
+    "description": "Imprecise Volley: Inflicts 150% ranged damage to targets with >75% units, 100% to 50%-75% units, and 50% to <50% units."
+  }
+}

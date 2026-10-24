@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 1184
+Cache-Control: max-age=3600
+Content-Type: text/html; charset=utf-8
+Etag: "3a0edcefc630bc1ce3684f9fe3c9a511bd09dbd426f1b6a7beea5702c8e59373"
+Last-Modified: Sat, 24 Oct 2026 19:18:33 GMT
+Strict-Transport-Security: max-age=31556926; includeSubDomains; preload
+Accept-Ranges: bytes
+Date: Sat, 24 Oct 2026 19:44:50 GMT
+X-Served-By: cache-fra-etou8220154-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1792871091.712777,VS0,VE62
+Vary: x-fh-requested-host, accept-encoding
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+

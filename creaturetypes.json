@@ -1,0 +1,308 @@
+[
+  {
+    "name": "peasant",
+    "model_count": 16,
+    "model_hp": 3,
+    "tier": 1,
+    "flying": false,
+    "stats": {
+      "ammo": 0,
+      "attack_melee_low": 6,
+      "attack_melee_high": 9,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 0,
+      "defense_ranged": 0,
+      "health": 48,
+      "initiative": 3,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 2,
+      "num_moves": 3,
+      "range": 1,
+      "stamina": 12,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [],
+    "ability_ids": []
+  },
+  {
+    "name": "swordsman",
+    "model_count": 8,
+    "model_hp": 5,
+    "tier": 2,
+    "flying": false,
+    "stats": {
+      "ammo": 0,
+      "attack_melee_low": 9,
+      "attack_melee_high": 11,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 1,
+      "defense_ranged": 1,
+      "health": 40,
+      "initiative": 2,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 2,
+      "num_moves": 2,
+      "range": 1,
+      "stamina": 14,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "ShieldBlock"
+    ],
+    "ability_ids": []
+  },
+  {
+    "name": "spearman",
+    "model_count": 8,
+    "model_hp": 5,
+    "tier": 2,
+    "flying": false,
+    "stats": {
+      "ammo": 1,
+      "attack_melee_low": 7,
+      "attack_melee_high": 10,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 1,
+      "defense_ranged": 0,
+      "health": 40,
+      "initiative": 5,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 2,
+      "num_moves": 3,
+      "range": 1,
+      "stamina": 18,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "CloseQuartersCounter",
+      "SpearWall"
+    ],
+    "ability_ids": [
+      "jav-01"
+    ]
+  },
+  {
+    "name": "barbarian",
+    "model_count": 8,
+    "model_hp": 6,
+    "tier": 2,
+    "flying": false,
+    "stats": {
+      "ammo": 0,
+      "attack_melee_low": 10,
+      "attack_melee_high": 14,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 0,
+      "defense_ranged": 0,
+      "health": 48,
+      "initiative": 4,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 1,
+      "num_moves": 3,
+      "range": 1,
+      "stamina": 16,
+      "morale": 14,
+      "flying": false
+    },
+    "traits": [],
+    "ability_ids": []
+  },
+  {
+    "name": "peasant-archer",
+    "model_count": 12,
+    "model_hp": 3,
+    "tier": 1,
+    "flying": false,
+    "stats": {
+      "ammo": 12,
+      "attack_melee_low": 4,
+      "attack_melee_high": 6,
+      "attack_ranged_low": 7,
+      "attack_ranged_high": 9,
+      "defense_melee": 0,
+      "defense_ranged": 0,
+      "health": 36,
+      "initiative": 3,
+      "is_ranged": true,
+      "num_attacks": 1,
+      "num_counterattacks": 1,
+      "num_moves": 3,
+      "range": 6,
+      "stamina": 14,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "FragileLine",
+      "VolleyFire"
+    ],
+    "ability_ids": [
+      "quick-draw-01"
+    ]
+  },
+  {
+    "name": "crossbowman",
+    "model_count": 8,
+    "model_hp": 5,
+    "tier": 2,
+    "flying": false,
+    "stats": {
+      "ammo": 10,
+      "attack_melee_low": 5,
+      "attack_melee_high": 6,
+      "attack_ranged_low": 8,
+      "attack_ranged_high": 11,
+      "defense_melee": 2,
+      "defense_ranged": 1,
+      "health": 40,
+      "initiative": 2,
+      "is_ranged": true,
+      "num_attacks": 1,
+      "num_counterattacks": 1,
+      "num_moves": 2,
+      "range": 4,
+      "stamina": 12,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "FragileLine",
+      "VolleyFire"
+    ],
+    "ability_ids": []
+  },
+  {
+    "name": "heavy-knights",
+    "model_count": 4,
+    "model_hp": 20,
+    "tier": 3,
+    "flying": false,
+    "stats": {
+      "ammo": 0,
+      "attack_melee_low": 16,
+      "attack_melee_high": 22,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 5,
+      "defense_ranged": 4,
+      "health": 80,
+      "initiative": 6,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 1,
+      "num_moves": 4,
+      "range": 1,
+      "stamina": 16,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [],
+    "ability_ids": []
+  },
+  {
+    "name": "behemoth",
+    "model_count": 1,
+    "model_hp": 120,
+    "tier": 4,
+    "flying": false,
+    "stats": {
+      "ammo": 0,
+      "attack_melee_low": 24,
+      "attack_melee_high": 34,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 6,
+      "defense_ranged": 3,
+      "health": 120,
+      "initiative": 3,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 2,
+      "num_moves": 2,
+      "range": 1,
+      "stamina": 20,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "CloseQuartersCounter"
+    ],
+    "ability_ids": []
+  },
+  {
+    "name": "hero-commander",
+    "model_count": 6,
+    "model_hp": 15,
+    "tier": 4,
+    "is_hero": true,
+    "flying": false,
+    "stats": {
+      "ammo": 0,
+      "attack_melee_low": 18,
+      "attack_melee_high": 24,
+      "attack_ranged_low": 0,
+      "attack_ranged_high": 0,
+      "defense_melee": 5,
+      "defense_ranged": 4,
+      "health": 90,
+      "initiative": 7,
+      "is_ranged": false,
+      "num_attacks": 1,
+      "num_counterattacks": 2,
+      "num_moves": 3,
+      "range": 1,
+      "stamina": 18,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "HeroPresence",
+      "BodyguardRetinue"
+    ],
+    "ability_ids": []
+  },
+  {
+    "name": "slinger",
+    "model_count": 8,
+    "model_hp": 3,
+    "tier": 1,
+    "flying": false,
+    "stats": {
+      "ammo": 12,
+      "attack_melee_low": 3,
+      "attack_melee_high": 5,
+      "attack_ranged_low": 6,
+      "attack_ranged_high": 8,
+      "defense_melee": 0,
+      "defense_ranged": 0,
+      "health": 24,
+      "initiative": 3,
+      "is_ranged": true,
+      "num_attacks": 1,
+      "num_counterattacks": 1,
+      "num_moves": 3,
+      "range": 6,
+      "stamina": 14,
+      "morale": 10,
+      "flying": false
+    },
+    "traits": [
+      "FragileLine",
+      "ImpreciseVolley"
+    ],
+    "ability_ids": [
+      "quick-draw-01"
+    ]
+  }
+]

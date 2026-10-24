@@ -1,0 +1,39 @@
+{
+  "grid": {
+    "showGrid": true,
+    "borderThickness": 2.5,
+    "borderColor": "#000000",
+    "borderOpacity": 1.0
+  },
+  "coordinates": {
+    "showCoords": true,
+    "fontSize": 14,
+    "fontFamily": "GustysSerpents, sans-serif",
+    "color": "#ffffff",
+    "strokeColor": "#000000",
+    "strokeWidth": 3
+  },
+  "fps": {
+    "showFps": true,
+    "fontSize": 14,
+    "fontFamily": "GustysSerpents",
+    "color": "#ffffff",
+    "alpha": 0.7,
+    "x": 136,
+    "y": 2
+  },
+  "hotkeys": {
+    "printPathPreview": "p",
+    "rest": "r",
+    "nextTurn": " ",
+    "nextUnit": "Tab",
+    "resetCamera": "Home",
+    "toggleStats": "F4"
+  },
+  "healthbars": {
+    "showHealthbars": true
+  },
+  "tooltips": {
+    "enabled": true
+  }
+}

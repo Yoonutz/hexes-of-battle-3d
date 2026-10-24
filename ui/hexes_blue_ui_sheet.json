@@ -1,0 +1,54 @@
+{
+  "frames": {
+    "btn_crystal_med_normal.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 81,
+        "h": 60
+      }
+    },
+    "btn_crystal_med_hover.png": {
+      "frame": {
+        "x": 83,
+        "y": 1,
+        "w": 81,
+        "h": 60
+      }
+    },
+    "btn_crystal_thin.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 75,
+        "h": 54
+      }
+    },
+    "btn_gray_crystal_normal.png": {
+      "frame": {
+        "x": 1,
+        "y": 62,
+        "w": 81,
+        "h": 60
+      }
+    },
+    "btn_gray_crystal_hover.png": {
+      "frame": {
+        "x": 83,
+        "y": 62,
+        "w": 81,
+        "h": 60
+      }
+    }
+  },
+  "animations": {},
+  "meta": {
+    "image": "hexes_blue_ui.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 512
+    },
+    "scale": "1.0"
+  }
+}

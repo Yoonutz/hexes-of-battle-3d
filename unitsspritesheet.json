@@ -1,0 +1,270 @@
+{
+    "frames": {
+        "peasant_fork_right.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "peasant_fork_left.png": {
+            "frame": {
+                "x": 160,
+                "y": 0,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "peasant_archer_right.png": {
+            "frame": {
+                "x": 320,
+                "y": 0,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "peasant_archer_left.png": {
+            "frame": {
+                "x": 480,
+                "y": 0,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "spearman_right.png": {
+            "frame": {
+                "x": 640,
+                "y": 0,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": -0.1,
+                "y": 0.5
+            }
+        },
+        "spearman_left.png": {
+            "frame": {
+                "x": 0,
+                "y": 320,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0.1,
+                "y": 0.5
+            }
+        },
+        "barbarian_right.png": {
+            "frame": {
+                "x": 160,
+                "y": 320,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "barbarian_left.png": {
+            "frame": {
+                "x": 320,
+                "y": 320,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "swordman_right.png": {
+            "frame": {
+                "x": 320,
+                "y": 640,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "swordman_left.png": {
+            "frame": {
+                "x": 480,
+                "y": 640,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "crossbowman_right.png": {
+            "frame": {
+                "x": 480,
+                "y": 320,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "crossbowman_left.png": {
+            "frame": {
+                "x": 640,
+                "y": 320,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "slinger_right.png": {
+            "frame": {
+                "x": 160,
+                "y": 640,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "slinger_left.png": {
+            "frame": {
+                "x": 0,
+                "y": 960,
+                "w": 160,
+                "h": 320
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "halberdier_left.png": {
+            "frame": {
+                "x": 0,
+                "y": 640,
+                "w": 160,
+                "h": 320
+            }
+        },
+        "longowman_left.png": {
+            "frame": {
+                "x": 640,
+                "y": 640,
+                "w": 160,
+                "h": 320
+            }
+        },
+        "magic_elemental_left.png": {
+            "frame": {
+                "x": 160,
+                "y": 960,
+                "w": 160,
+                "h": 320
+            }
+        },
+        "rock_elemental_left.png": {
+            "frame": {
+                "x": 480,
+                "y": 960,
+                "w": 160,
+                "h": 320
+            }
+        },
+        "peasant_face.png": {
+            "frame": {
+                "x": 23,
+                "y": 38,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "peasant_archer_face.png": {
+            "frame": {
+                "x": 540,
+                "y": 60,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "spearman_face.png": {
+            "frame": {
+                "x": 50,
+                "y": 345,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "swordman_face.png": {
+            "frame": {
+                "x": 530,
+                "y": 660,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "barbarian_face.png": {
+            "frame": {
+                "x": 370,
+                "y": 345,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "crossbowman_face.png": {
+            "frame": {
+                "x": 695,
+                "y": 345,
+                "w": 64,
+                "h": 64
+            }
+        },
+        "slinger_face.png": {
+            "frame": {
+                "x": 28,
+                "y": 990,
+                "w": 64,
+                "h": 64
+            }
+        }
+    },
+    "animations": {},
+    "meta": {
+        "image": "units_160x320.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 800,
+            "h": 1280
+        },
+        "scale": "2.0"
+    }
+}

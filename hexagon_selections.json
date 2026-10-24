@@ -1,0 +1,223 @@
+{
+    "frames": {
+        "hex_empty.png": {
+            "frame": {
+                "x": 1,
+                "y": 1,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_selected_green.png": {
+            "frame": {
+                "x": 83,
+                "y": 1,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_usable_yellow.png": {
+            "frame": {
+                "x": 165,
+                "y": 1,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_action_red.png": {
+            "frame": {
+                "x": 247,
+                "y": 1,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_action_blue.png": {
+            "frame": {
+                "x": 83,
+                "y": 95,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_gray": {
+            "frame": {
+                "x": 329,
+                "y": 1,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_E.png": {
+            "frame": {
+                "x": 1,
+                "y": 189,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_NE.png": {
+            "frame": {
+                "x": 83,
+                "y": 189,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_N.png": {
+            "frame": {
+                "x": 165,
+                "y": 189,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_NW.png": {
+            "frame": {
+                "x": 247,
+                "y": 189,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_W.png": {
+            "frame": {
+                "x": 329,
+                "y": 189,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_SW.png": {
+            "frame": {
+                "x": 1,
+                "y": 283,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_S.png": {
+            "frame": {
+                "x": 83,
+                "y": 283,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_SE.png": {
+            "frame": {
+                "x": 165,
+                "y": 283,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_NNW.png": {
+            "frame": {
+                "x": 247,
+                "y": 283,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_NNE.png": {
+            "frame": {
+                "x": 329,
+                "y": 283,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_SSE.png": {
+            "frame": {
+                "x": 329,
+                "y": 95,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_range_SSW.png": {
+            "frame": {
+                "x": 1,
+                "y": 95,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_dir_NW.png": {
+            "frame": {
+                "x": 411,
+                "y": 95,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_dir_NE.png": {
+            "frame": {
+                "x": 411,
+                "y": 189,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_dir_E.png": {
+            "frame": {
+                "x": 411,
+                "y": 283,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_dir_SE.png": {
+            "frame": {
+                "x": 1,
+                "y": 377,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_dir_SW.png": {
+            "frame": {
+                "x": 83,
+                "y": 377,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_dir_W.png": {
+            "frame": {
+                "x": 165,
+                "y": 377,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "hex_enemy_movement.png": {
+            "frame": {
+                "x": 247,
+                "y": 377,
+                "w": 80,
+                "h": 92
+            }
+        },
+        "empty.png": {
+            "frame": {
+                "x": 411,
+                "y": 1,
+                "w": 80,
+                "h": 92
+            }
+        }
+    },
+    "animations": {        
+    },
+    "meta": {
+        "image": "hexagon_selections.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 492,
+            "h": 470
+        },
+        "scale": "1.0"
+    }
+}

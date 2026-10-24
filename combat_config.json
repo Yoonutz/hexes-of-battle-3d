@@ -1,0 +1,160 @@
+{
+  "terrain": {
+    "moveCosts": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "5": 10
+    },
+    "staminaCosts": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "5": 5
+    },
+    "buffs": {
+      "1": {
+        "defense_ranged": 1
+      },
+      "2": {
+        "defense_melee": 1,
+        "attack_melee_low": 1,
+        "attack_melee_high": 1,
+        "attack_ranged_low": 1,
+        "attack_ranged_high": 1,
+        "range": 1
+      },
+      "3": {
+        "defense_melee": -1,
+        "defense_ranged": -1
+      }
+    }
+  },
+  "stamina": {
+    "actionCosts": {
+      "moveNormal": 1,
+      "moveRough": 2,
+      "meleeAttack": 3,
+      "rangedAttack": 2,
+      "retaliation": 2,
+      "specialAbility": 3,
+      "rest": 0
+    },
+    "restRecovery": 5,
+    "exhaustionThresholds": {
+      "freshMinPercent": 0.55,
+      "windedMinPercent": 0.25,
+      "exhaustedMinPercent": 0.01,
+      "depletedPercent": 0.00
+    },
+    "penalties": {
+      "winded": {
+        "damageDealtMultiplier": 0.90,
+        "movementPenalty": 1,
+        "defenseMultiplier": 1.0,
+        "canRetaliate": true,
+        "damageTakenMultiplier": 1.0
+      },
+      "exhausted": {
+        "damageDealtMultiplier": 0.70,
+        "movementPenalty": 0,
+        "defenseMultiplier": 1.0,
+        "canRetaliate": false,
+        "damageTakenMultiplier": 1.20
+      },
+      "depleted": {
+        "damageDealtMultiplier": 0.50,
+        "movementPenalty": 99,
+        "defenseMultiplier": 0.50,
+        "canRetaliate": false,
+        "damageTakenMultiplier": 1.50,
+        "canMove": false,
+        "canAttack": false,
+        "autoMoraleCheck": true
+      }
+    }
+  },
+  "retaliation": {
+    "multipliers": [
+      1.0,
+      0.6,
+      0.3,
+      0.0
+    ],
+    "minStamina": 2,
+    "maxRetaliationsPerTurn": 3,
+    "closeQuartersCounterTrait": "CloseQuartersCounter"
+  },
+  "facing": {
+    "front": {
+      "damageBonus": 0,
+      "damageMultiplier": 1.0
+    },
+    "flank": {
+      "damageBonus": 1,
+      "damageMultiplier": 1.0
+    },
+    "rear": {
+      "damageBonus": 2,
+      "damageMultiplier": 1.0
+    }
+  },
+  "ranged": {
+    "scatterChance": 0.15,
+    "friendlyFireAllowed": true,
+    "meleeEngagedPenalty": true
+  },
+  "morale": {
+    "maxMorale": 30,
+    "casualtyThresholdRatio": 0.25,
+    "panicBaseChance": 0.30,
+    "exhaustionMoraleCheckPenalty": 0.20,
+    "heroAuraBonus": 25,
+    "heroAuraRadius": 2,
+    "routingTurnLoss": true,
+    "breakpoints": {
+      "routing": 0,
+      "panicked": 3,
+      "wavering": 7,
+      "steady": 15
+    },
+    "squadDeath": {
+      "neighbourAllyLoss": 1,
+      "neighbourEnemyBonus": 1,
+      "killerMeleeBonus": 2,
+      "killerRangedBonus": 1
+    }
+  },
+  "hero": {
+    "bodyguardRetinueAbsorption": 1.0,
+    "presenceMoraleBonus": 15
+  },
+  "traits": {
+    "fragileLine": {
+      "extraMoraleLoss": 2
+    },
+    "shieldBlock": {
+      "damageReduction": 2
+    },
+    "volleyFire": {
+      "highThreshold": 0.75,
+      "highMultiplier": 1.25,
+      "midThreshold": 0.50,
+      "midMultiplier": 1.0,
+      "lowMultiplier": 0.75
+    },
+    "spearWall": {
+      "damageReduction": 2,
+      "exactDirectionOnly": true
+    },
+    "impreciseVolley": {
+      "highThreshold": 0.75,
+      "highMultiplier": 1.5,
+      "midThreshold": 0.50,
+      "midMultiplier": 1.0,
+      "lowMultiplier": 0.5
+    }
+  }
+}
